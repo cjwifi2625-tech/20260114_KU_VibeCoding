@@ -13,7 +13,7 @@ st.header("1. 제목과 헤더")
 st.subheader("이것은 소제목입니다")
 
 st.write("""
-Streamlit은 다양한 방식으로 텍스트를 출력할 수 있습니다.
+Streamlit은 다양한 방식으로 텍스트를 출력할 수 있습니다.  
 각 함수의 용도를 이해하고 적절히 사용하는 것이 중요합니다.
 """)
 
@@ -107,10 +107,10 @@ st.markdown("> 누구나 코딩을 할 수 있다. - 박태근")
 
 # 인터넷상 이미지
 st.caption("인터넷상 이미지 표시")
-st.image("https://i0.wp.com/magazine.contenta.co/wp-content/uploads/2021/02/1-1.jpg?ssl=1")
+st.image("https://th.bing.com/th/id/OIP.tEzeUJU3r9-ubK1c7ECOQAHaIG?w=167&h=183&c=7&r=0&o=7&pid=1.7&rm=3")
 
 # 이미지 사이즈를 화면에 맞추고싶다면? 강제로 늘릴 수 있음
-st.image("https://placehold.co/300x300")
+st.image("https://th.bing.com/th/id/OIP.tEzeUJU3r9-ubK1c7ECOQAHaIG?w=167&h=183&c=7&r=0&o=7&pid=1.7&rm=300x300",use_container_width=True)
 # st.image("https://placehold.co/300x300", use_container_width=True)
 
 # 로컬 이미지

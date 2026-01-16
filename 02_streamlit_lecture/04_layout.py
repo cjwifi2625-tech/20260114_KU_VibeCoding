@@ -66,7 +66,7 @@ with col1:
 
 with col2:
     st.write("중앙 컬럼은 넓게!")
-    st.progress(0.7)
+    st.progress(0.9)
 
 with col3:
     st.metric("매출", "₩5M", "+8%")
@@ -77,7 +77,7 @@ with col3:
 st.divider()
 st.header("2. 탭 레이아웃")
 
-tab1, tab2  = st.tabs(["⚙️ 설정", "ℹ️ 정보"])
+tab1, tab2, tab3 = st.tabs(["⚙️ 설정", "ℹ️ 정보","게임"])
 
 with tab1:
     st.subheader("설정 탭")
@@ -95,6 +95,9 @@ with tab2:
     **개발자**: Streamlit Team  
     **라이선스**: MIT
     """)
+
+with tab3:
+    st.subheader("롤")
 
 # ============================================
 # 4. 확장 가능한 섹션 (Expander)
@@ -131,7 +134,7 @@ import time
 placeholder = st.empty()
 
 if st.button("카운트다운 시작"):
-    for i in range(5, 0, -1):
+    for i in range(10, 0, -2):
         placeholder.write(f"⏰ {i}초 남았습니다...")
         time.sleep(1) # 1초 기다리기
     placeholder.success("✅ 완료!")
